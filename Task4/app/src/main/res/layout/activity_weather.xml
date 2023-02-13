@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF9800"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".WeatherActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Weather App"
+            android:textSize="60dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/weather_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_filter_drama_24"></ImageView>
+
+        <TextView
+            android:id="@+id/img_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Weather"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"></TextView>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/address_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Address"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/temp_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Temperature: "
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/min_temp_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Minimum Temperature: "
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/max_temp_id"
+            android:layout_width="wrap_content"
+            android:layout_height="83dp"
+            android:text="Maximum Temperature: "
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"></Button>
+
+</LinearLayout>
